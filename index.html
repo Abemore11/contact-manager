@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Nexus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A dynamic contact manager application" />
+    <link rel="icon" type="image/png" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+
+    <!-- ================= HEADER (Sticky container) ================= -->
+    <header>
+
+        <!-- Top row: App name + hamburger -->
+        <div class="header-top">
+
+            <!-- App name (links to home) -->
+            <h1><a href="/">Nexus</a></h1>
+
+            <!-- Hamburger button (***JS-enhanced later) -->
+            <button type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- Search bar (global filter input) -->
+        <div class="header-search">
+            <!-- Hidden label for screen readers -->
+            <label for="contact-search" class="visually-hidden">
+                Search your network of contacts
+            </label>
+
+            <input type="search" id="contact-search" name="contact-search" placeholder="Search your network...">
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION DRAWER ================= -->
+    <div id="mobile-drawer">
+        <nav aria-label="Primary navigation">
+
+            <!-- Page navigation -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Add Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Filters (NOT navigation!) -->
+        <section aria-label="Contact filters">
+
+            <h2>Filters</h2>
+
+            <ul>
+                <!-- Buttons are for actions -->
+                <li><button type="button">Favorites</button></li>
+                <li><button type="button">Friend</button></li>
+                <li><button type="button">Family</button></li>
+                <li><button type="button">Work</button></li>
+                <li><button type="button">Networking</button></li>
+                <li><button type="button">Other</button></li>
+                <!-- Technically sorting, but it'll be ok :) -->
+                <li><button type="button">A–Z</button></li>
+            </ul>
+
+        </section>
+    </div>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Contact list (JS will eventually populate this) -->
+        <section aria-label="Contact list">
+
+            <!-- Contact Card 1 -->
+            <article class="contact-card">
+
+                <header class="contact-card-header">
+                    <h2>John Smith</h2>
+
+                    <!-- Favorite button -->
+                    <button type="button" aria-label="Toggle favorite">
+                        ☆
+                    </button>
+                </header>
+
+                <p>Software Engineer</p>
+
+                <p>Work • BYU-Idaho</p>
+
+            </article>
+
+
+            <!-- Contact Card 2 -->
+            <article class="contact-card">
+
+                <header class="contact-card-header">
+                    <h2>Jane Doe</h2>
+
+                    <button type="button" aria-label="Toggle favorite">
+                        ☆
+                    </button>
+                </header>
+
+                <p>Student</p>
+
+                <p>Friend • Personal</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>Nexus Contact Manager</p>
+    </footer>
+
+</body>
+
+</html>
+
+</html>
