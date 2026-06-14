@@ -12,13 +12,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
 
     <!-- ================= HEADER (Sticky container) ================= -->
-    <header>
+    <header class="main-header">
 
         <!-- Top row: App name + hamburger -->
         <div class="header-top">
@@ -27,8 +29,10 @@
             <h1><a href="/">Nexus</a></h1>
 
             <!-- Hamburger button (***JS-enhanced later) -->
-            <button type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-                ☰
+            <button id="mobile-drawer-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-drawer">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
 
         </div>
@@ -49,6 +53,7 @@
     <!-- ================= NAVIGATION DRAWER ================= -->
     <div id="mobile-drawer">
         <nav aria-label="Primary navigation">
+            <h2>Navigate</h2>
 
             <!-- Page navigation -->
             <ul>
@@ -60,7 +65,7 @@
         <!-- Filters (NOT navigation!) -->
         <section aria-label="Contact filters">
 
-            <h2>Filters</h2>
+            <h2>Filter</h2>
 
             <ul>
                 <!-- Buttons are for actions -->
@@ -117,6 +122,57 @@
                 <p>Student</p>
 
                 <p>Friend • Personal</p>
+
+            </article>
+
+            <!-- Contact Card 3 -->
+            <article class="contact-card">
+
+                <header class="contact-card-header">
+                    <h2>Michael Johnson</h2>
+
+                    <button type="button" aria-label="Toggle favorite">
+                        ☆
+                    </button>
+                </header>
+
+                <p>Marketing Manager</p>
+
+                <p>Work • Acme Corporation</p>
+
+            </article>
+
+            <!-- Contact Card 4 -->
+            <article class="contact-card">
+
+                <header class="contact-card-header">
+                    <h2>Sarah Williams</h2>
+
+                    <button type="button" aria-label="Toggle favorite">
+                        ☆
+                    </button>
+                </header>
+
+                <p>Graphic Designer</p>
+
+                <p>Networking • Freelance</p>
+
+            </article>
+
+            <!-- Contact Card 5 -->
+            <article class="contact-card">
+
+                <header class="contact-card-header">
+                    <h2>David Brown</h2>
+
+                    <button type="button" aria-label="Toggle favorite">
+                        ☆
+                    </button>
+                </header>
+
+                <p>Teacher</p>
+
+                <p>Family • Local School District</p>
 
             </article>
 

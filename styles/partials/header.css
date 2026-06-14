@@ -1,0 +1,70 @@
+/* ---------- Header ---------- */
+
+.main-header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-sm) var(--space-md);
+
+  height: var(--header-height);
+}
+
+/* ---------- Header Top ---------- */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- App Title ---------- */
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* ---------- Menu Button ---------- */
+
+#mobile-drawer-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  border: none;
+  background: none;
+}
+
+#mobile-drawer-toggle span {
+  width: 20px;
+  height: 4px;
+
+  background: currentColor;
+
+  border-radius: 999px;
+}
+
+/* ---------- Search Area ---------- */
+
+.header-search {
+  margin-top: var(--space-sm);
+}
+
+/* ---------- Search Input ---------- */
+
+.header-search input[type="search"] {
+  width: 100%;
+  padding: var(--space-sm);
+
+  border-radius: var(--radius-md);
+}

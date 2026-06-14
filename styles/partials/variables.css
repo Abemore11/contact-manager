@@ -1,0 +1,28 @@
+/* Global design variables */
+
+:root {
+  /* Typography */
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+
+  /* Spacing - keeps things uniform */
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* Border Radius */
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Header Height */
+  --header-height: 7rem;
+}

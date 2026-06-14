@@ -1,0 +1,57 @@
+/* Styles for contact cards */
+
+.contact-card {
+  /* layout */
+  width: 100%;
+  max-width: 600px; /* keeps it aligned with search bar feel */
+
+  /* spacing */
+  padding: 1rem;
+  margin: 0.75rem auto; /* centers and spaces cards */
+
+  /* structure */
+  border: 1px solid #ddd; /* placeholder neutral border */
+  border-radius: 8px;
+
+  /* subtle separation */
+  background: transparent;
+
+  /* future-proofing */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Header row: name + favorite button */
+.contact-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Name styling */
+.contact-card-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700; /* bold name */
+  margin: 0;
+}
+
+/* Favorite button */
+.contact-card-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Supporting text under name */
+.contact-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Optional: subtle spacing between text blocks */
+.contact-card p + p {
+  margin-top: 0.25rem;
+}
