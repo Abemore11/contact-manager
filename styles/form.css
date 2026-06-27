@@ -1,0 +1,109 @@
+/* ---------- Global Styles ---------- */
+@import "styles.css";
+
+
+/* ---------- Form Page ---------- */
+
+/* 1. Container & Layout */
+main {
+  background-color: #f9f9fb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+}
+
+#add-contact-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: var(--space-xl);
+  color: #1d1d1f; /* Apple-style deep black/grey */
+}
+
+/* 2. Fieldsets as Cards */
+fieldset {
+  border: none;
+  background: white;
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+legend {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-md);
+  color: #424245;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+/* 3. Inputs & Labels */
+div {
+  margin-bottom: var(--space-md);
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #86868b;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d2d2d7;
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0071e3;
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+}
+
+/* 4. Checkbox Alignment */
+fieldset div:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* 5. The "Action" Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}

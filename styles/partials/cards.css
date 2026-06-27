@@ -1,25 +1,29 @@
 /* Styles for contact cards */
 
 .contact-card {
-  /* layout */
+  /* Layout */
   width: 100%;
-  max-width: 600px; /* keeps it aligned with search bar feel */
+  max-width: 600px;
+  margin: 0.75rem auto;
 
-  /* spacing */
-  padding: 1rem;
-  margin: 0.75rem auto; /* centers and spaces cards */
+  /* Spacing */
+  padding: var(--space-lg);
 
-  /* structure */
-  border: 1px solid #ddd; /* placeholder neutral border */
-  border-radius: 8px;
+  /* Modern Card Aesthetic */
+  background: #ffffff;
+  border: 1px solid #e5e5e7; /* Subtle border for definition */
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 
-  /* subtle separation */
-  background: transparent;
+  /* Transition for hover interaction */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
 
-  /* future-proofing */
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Header row: name + favorite button */
@@ -27,12 +31,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: var(--space-xs);
 }
 
 /* Name styling */
 .contact-card-header h2 {
-  font-size: 1.1rem;
-  font-weight: 700; /* bold name */
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
   margin: 0;
 }
 
@@ -41,17 +47,32 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #c7c7cc; /* Neutral color until active */
+  transition: color 0.2s ease;
+  padding: 0;
 }
 
-/* Supporting text under name */
+.contact-card-header button:hover {
+  color: #ffd60a; /* Subtle gold for hover */
+}
+
+/* Supporting text styling */
 .contact-card p {
   margin: 0;
   font-size: 0.95rem;
-  font-weight: 400;
+  color: #424245;
 }
 
-/* Optional: subtle spacing between text blocks */
+/* Organization/Category styling */
+.contact-card p:last-child {
+  font-weight: 500;
+  color: #86868b; /* Lighter color for secondary info */
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
 .contact-card p + p {
-  margin-top: 0.25rem;
+  margin-top: var(--space-xs);
 }

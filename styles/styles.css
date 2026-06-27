@@ -1,7 +1,10 @@
-@import "partials/variables.css";
-@import "partials/global.css";
-@import "partials/header.css";
-@import "partials/footer.css";
-@import "partials/navigation.css";
-@import "partials/cards.css";
-@import "partials/utilities.css";
+/* ---------- Foundation ---------- */
+@import "./partials/variables.css";
+@import "./partials/global.css";
+@import "./partials/utilities.css";
+
+/* ---------- Components ---------- */
+@import "./partials/header.css";
+@import "./partials/navigation.css";
+@import "./partials/cards.css";
+@import "./partials/footer.css";

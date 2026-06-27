@@ -35,7 +35,7 @@
   gap: var(--space-md);
 }
 
-#mobile-drawer nav h2, section h2 {
+#mobile-drawer h2 {
   margin: 0;
   font-size: 1rem;
 }
