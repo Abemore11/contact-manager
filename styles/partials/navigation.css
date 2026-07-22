@@ -50,8 +50,6 @@
   display: block;
 
   padding: var(--space-sm) var(--space-md);
-
-  text-decoration: none;
 }
 
 /* ---------- Filters ---------- */
@@ -94,5 +92,9 @@
   #mobile-drawer nav ul {
     display: flex;
     flex-direction: row;
+  }
+
+  #mobile-drawer nav a {
+    font-size: 1.2rem;
   }
 }

@@ -3,7 +3,6 @@
 .contact-card {
   /* Layout */
   width: 100%;
-  margin: 0.75rem auto;
 
   /* Spacing */
   padding: var(--space-lg);

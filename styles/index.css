@@ -3,13 +3,39 @@
 
 /* ---------- Index Page ---------- */
 
+main {
+  background-color: #f9f9fb;
+}
+
 #contacts-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
+/* ---------- Search Input ---------- */
 
+.search-bar {
+  padding: 3.5rem 0 3rem 0;
+}
+
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: var(--space-sm);
+
+  border-radius: var(--radius-md);
+  border: 2px solid #000;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.search-bar input[type="search"]:focus {
+  border-color: #1515ff;
+  box-shadow: 0 0 0 3px rgba(23, 23, 234, 0.15);
+  outline: none;
+}
 /* ---------- Desktop View ---------- */
 
 @media (min-width: 768px) {
@@ -17,6 +43,12 @@
     grid-template-columns: repeat(2, minmax(350px, 1fr));
     max-width: 900px;
     margin: 0 auto;
-    gap: var(--space-xl);
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 4.5rem 0 3rem 0;
   }
 }
