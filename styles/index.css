@@ -3,14 +3,12 @@
 
 /* ---------- Index Page ---------- */
 
-main {
-  background-color: #f9f9fb;
-}
-
 #contacts-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
+  padding-bottom: 4rem;
+
 }
 
 /* ---------- Search Input ---------- */

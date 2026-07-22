@@ -87,16 +87,6 @@ export async function getAllContacts() {
 }
 
 
-// updateContact(contact)
-
-
-// deleteContact(id)
-
-
-
-
-
-
 /* ====================================
          Private Helper Functions
    ==================================== */

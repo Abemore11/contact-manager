@@ -5,7 +5,6 @@
 
 /* 1. Container & Layout */
 main {
-  background-color: #f9f9fb;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -107,6 +106,7 @@ button[type="submit"] {
   font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.2s;
+  margin-bottom: 3rem;
 }
 
 button[type="submit"]:hover {
