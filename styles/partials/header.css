@@ -1,0 +1,117 @@
+/* ---------- Header ---------- */
+
+.main-header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-sm) var(--space-md);
+
+  height: var(--header-height);
+
+  padding-top: 2rem;
+}
+
+/* ---------- Header Top ---------- */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- App Title ---------- */
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* ---------- Menu Button ---------- */
+.hamburger-line {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* ---------- Menu Button ---------- */
+
+#mobile-drawer-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  border: none;
+  background: none;
+}
+
+#mobile-drawer-toggle span {
+  width: 20px;
+  height: 4px;
+
+  background: currentColor;
+
+  border-radius: 999px;
+}
+
+#mobile-drawer-toggle.open .hamburger-line:first-child {
+  transform: translateY(5px) rotate(45deg);
+}
+
+#mobile-drawer-toggle.open .hamburger-line:last-child {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* ---------- Search Area ---------- */
+
+.header-search {
+  margin-top: var(--space-sm);
+  padding-top: 0.8rem;
+}
+
+/* ---------- Search Input ---------- */
+
+.header-search input[type="search"] {
+  width: 100%;
+  padding: var(--space-sm);
+
+  border-radius: var(--radius-md);
+}
+
+/* ---------- DESKTOP VIEW ---------- */
+
+@media (min-width: 768px) {
+  .main-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    position: static;
+
+    /* Limits width and centers header */
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Hides hamburger button on desktop */
+  #mobile-drawer-toggle {
+    display: none;
+  }
+
+  /* Force search bar to drop to the next row completely */
+  .header-search {
+    flex-basis: 100%;
+    margin-top: var(--space-md);
+  }
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "firstName": "Till",
+        "lastName": "Lindemann",
+        "title": "Lead Vocalist",
+        "org": "Rammstein",
+        "favorite": true,
+        "tag": "Networking",
+        "phone": "555-555-5555",
+        "email": "till@example.com",
+        "street": "123 Main St",
+        "city": "Berlin",
+        "state": "Berlin",
+        "zip": "10115",
+        "notes": "Known for his deep, powerful voice and theatrical stage presence."
+    }
+]

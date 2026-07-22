@@ -1,0 +1,82 @@
+/* Styles for contact cards */
+
+.contact-card {
+  /* Layout */
+  width: 100%;
+  margin: 0.75rem auto;
+
+  /* Spacing */
+  padding: var(--space-lg);
+
+  /* Modern Card Aesthetic */
+  background: #ffffff;
+  border: 1px solid #e5e5e7; /* Subtle border for definition */
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  /* Transition for hover interaction */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header row: name + favorite button */
+.contact-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+/* Name styling */
+.contact-card-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+/* Favorite button */
+.contact-card-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #c7c7cc; /* Neutral color until active */
+  transition: color 0.2s ease;
+  padding: 0;
+}
+
+/* Active favorite state */
+.contact-card-header button.favorite {
+  color: #ffd60a; /* Gold color for favorite/highlighted star*/
+}
+
+.contact-card-header button:hover {
+  color: #ffd60a; /* Subtle gold for hover */
+}
+
+/* Supporting text styling */
+.contact-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #424245;
+}
+
+/* Organization/Category styling */
+.contact-card p:last-child {
+  font-weight: 500;
+  color: #86868b; /* Lighter color for secondary info */
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.contact-card p + p {
+  margin-top: var(--space-xs);
+}

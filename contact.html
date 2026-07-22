@@ -1,0 +1,71 @@
+<!-- Modal is inside this file at the bottom -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Nexus | Contact Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View and manage contact details" />
+  <link rel="icon" type="image/png" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/details.css" />
+  <script type="module" src="./scripts/contact.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+
+    <!-- Top row: App name + hamburger -->
+    <div class="header-top">
+
+      <!-- App name (links to home) -->
+      <h1><a href="./index.html">Nexus</a></h1>
+
+      <!-- Hamburger button (*JS-enhanced) -->
+      <button id="mobile-drawer-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="mobile-drawer">
+        <!-- Hamburger icon (2 lines) -->
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </div>
+
+    <!-- ================= NAVIGATION DRAWER ================= -->
+    <div id="mobile-drawer">
+      <nav aria-label="Primary navigation">
+        <h2>Navigate</h2>
+
+        <!-- Page navigation -->
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="form.html">Add Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="contact-details" aria-label="Contact Details">
+
+    <!-- Contact Details (JS is populating this) -->
+
+  </main>
+
+  <footer>
+    <p>Nexus Contact Network</p>
+  </footer>
+
+</body>
+
+</html>

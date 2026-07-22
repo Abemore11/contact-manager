@@ -1,0 +1,22 @@
+/* ---------- Global Styles ---------- */
+@import "styles.css";
+
+/* ---------- Index Page ---------- */
+
+#contacts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+
+/* ---------- Desktop View ---------- */
+
+@media (min-width: 768px) {
+  #contacts-container {
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+    gap: var(--space-xl);
+  }
+}

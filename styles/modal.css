@@ -1,0 +1,33 @@
+/* ================= MODAL ================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  width: min(90%, 500px);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: none;
+  border: none;
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+/* Site-wide global styles */
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Document ---------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+/* ---------- Images ---------- */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ---------- Inputs ---------- */
+
+input {
+  font: inherit;
+}
+
+/* ---------- Main ---------- */
+
+main {
+  padding: var(--space-md);
+  margin-top: 1rem;
+}
