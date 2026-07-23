@@ -22,8 +22,29 @@
 /* ---------- App Title ---------- */
 
 .main-header h1 {
+  color: black;
   margin: 0;
   font-size: 2rem;
+  animation: nexusGlow 3s ease-in-out infinite;
+}
+
+@keyframes nexusGlow {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.8);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.main-header h1 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* ---------- Menu Button ---------- */
@@ -71,7 +92,6 @@
 /* ---------- DESKTOP VIEW ---------- */
 
 @media (min-width: 768px) {
-
   .main-header h1 {
     font-size: 2.5rem;
     padding-bottom: 1rem;
